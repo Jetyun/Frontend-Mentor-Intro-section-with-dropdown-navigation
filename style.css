@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+:root{
+--font_normal:500;
+--font_heavy:700;
+--Almost_White: hsl(0, 0%, 98%);
+--Medium_Gray: hsl(0, 0%, 41%);
+--Almost_Black: hsl(0, 0%, 8%);
+--h1_font_size:2.2rem;
+--body_font_size:1rem;
+--smaller_body_font_size:0.90rem;
+--desktop_container_width:1000px;
+--desktop_h1_font_size:4.8rem;
+--mobile_width:375px;
+}
+*{padding:0;
+margin: 0;
+box-sizing: content-box;
+font-size: 16px;
+font-family: 'Epilogue', sans-serif;
+}
+
+.container{
+width:var(--mobile_width);
+height: 750px ;
+margin: auto;
+background-color:var(--Almost_White);
+}
+
+
+
+h1{
+font-size:var(--h1_font_size);
+color: var(--Almost_Black);
+margin:30px 0px 20px 0px;
+text-align: center;
+}
+#arrowupone, #arrowuptwo{
+    display:none;
+
+}
+
+.cross{
+margin-left: 200px;
+margin-bottom: 30px;
+}
+.greyed{
+display:none;
+width:120px;
+height:750px;
+position: absolute;
+background-color: hsl(0, 0%, 8%);
+opacity: 0.7;
+}
+.logo{
+float:left;
+margin-top: 30px;
+margin-left: 20px;
+}
+.menu{
+float:right;
+margin-top: 30px;
+margin-right: 20px;
+}
+.menu_content{
+display: none;
+margin-left: 120px;
+padding:20px;
+z-index: 1;
+width: 270px;
+height:750px;
+position:absolute;
+background-color:var(--Almost_White);
+
+}
+::marker{
+    content: none;
+}
+.hero-mobile{
+    height:40%;
+    width:375px;
+    max-height: 564px; 
+    margin-top: 20px;  
+}
+.hero_desktop{
+display:none;
+width:460px;
+height:600px;
+
+}
+.text_content{
+padding:10px;
+}
+
+.choice, .para, .log, .reg{
+    color:hsl(240, 6%, 50%);
+}
+
+.choice, .para{
+font-size: var(--body_font_size);
+font-weight:500;
+}
+.choice{
+padding:10px;
+
+}
+.tab{
+margin-left: 20px;
+
+}
+.flexicon{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+margin-top: 40px;
+}
+
+.log, .reg{
+font-size:var(--smaller_body_font_size);
+padding:20px;
+}
+.log{
+margin-top: 30px;
+margin-left: 70px;
+
+}
+
+.reg{
+margin-right: 40px;
+    text-align: center;
+    padding:10px 20px;
+border: 2px solid hsl(240, 6%, 50%);
+border-radius: 10px;
+
+
+}
+
+.learn{
+padding:10px 15px;
+background-color: black; 
+border-bottom: 30px;
+color:hsl(240, 5%, 91%);
+width:30%;
+text-align: center;
+margin-left: 110px;
+border-radius: 10px;
+font-weight: 700;
+border:2px solid var(--Almost_Black);
+}
+
+.para{
+text-align: center;
+margin-bottom: 20px;
+line-height: 25px;
+}
+
+.choice:active, .log:active, .reg:active, .learn:active{
+    color:var(--Almost_Black);
+    background-color: transparent;
+}
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+.databiz{
+    width:70px ;
+    height:17px
+}
+.audio{
+    width:50px ;
+    height:22px
+}
+.meet{
+    width:52px ;
+    height:17px
+}
+.maker{
+    width:52px ;
+    height:17px
+}
+
+@media screen and (min-width: 1440px){
+.menu, .hero-mobile, .cross{
+    display: none;
+}
+.container{
+    width:100%;
+    height:fit-content;
+}
+.big-container{
+margin: auto;
+display: flex;
+flex-direction: row-reverse;
+margin-top:100px;
+width:1150px;
+}
+.logo{
+float:none;
+
+}
+.hero_desktop{
+display:block;
+}
+.menu_content{
+    height:40px;
+    display:flex;
+    width: 1250px;
+}
+h1, .para{
+    text-align: left;
+}
+h1{
+    font-size: var(--desktop_h1_font_size);
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+.log, .reg{
+    margin:0;
+    padding:10px;
+}
+.log{
+    margin-left: auto;
+}
+.reg{
+    padding:10px 20px;
+}
+.text_content{
+width:900px;
+padding-right: 170px;;
+
+}
+.choice, .log, .reg{
+    margin-right: 20px;
+}
+.para{
+
+margin-right: 140px;    
+}
+.learn{
+width: 23%;
+padding:15px 10px;
+margin:40px 0 80px 0;
+}
+.flexicon{
+justify-content:flex-start;
+width:520px;
+height:30px;
+}
+.icon{
+margin-right: 60px;
+
+}
+.databiz{
+    width:100px
+}
+.audio{
+    width:60px;
+    height:30px;
+}
+.meet{
+    width:100px
+}
+.maker{
+    width:70px;
+    height:20px;
+}
+.big_container_detailbox{
+background-color: white;
+box-shadow: 0 0 30px grey;
+border-radius: 10px;
+padding:20px 0 10px 0;
+margin-top: 8px;
+
+}
+
+.feature{
+margin-left: -70px;
+width:170px
+}
+
+}

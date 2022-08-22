@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+</head>
+<body>
+<main>
+<section class="container">
+  <section class="menu_content">
+<img class="cross" src="images/icon-close-menu.svg" alt="" width="26" height="26" onclick="off()">
+<details>
+  <summary class="choice" onclick="arrowone()">Features <img id="arrowdownone" src="images/icon-arrow-down.svg" width="10" height="6" alt=""><img id="arrowupone" src="images/icon-arrow-up.svg" width="10" height="6" alt=""></summary>
+  <div class="big_container_detailbox feature">
+  <p class="tab choice"><img src="images/icon-todo.svg" width="14" height="16" alt="">&nbsp;&nbsp;&nbsp;Todo List</p>
+  <p class="tab choice"><img src="images/icon-calendar.svg" width="16" height="16" alt="">&nbsp;&nbsp;&nbsp;Calendar</p>
+  <p class="tab choice"><img src="images/icon-reminders.svg" width="13" height="17" alt=''>&nbsp;&nbsp;&nbsp;Reminders</p>
+  <p class="tab choice"><img src="images/icon-planning.svg" width="16" height="16" alt="">&nbsp;&nbsp;&nbsp;Planning</p>
+  </div>
+</details>
+<details>
+  <summary class="choice" onclick="arrowtwo()">Company <img id="arrowdowntwo" src="images/icon-arrow-down.svg" width="10" height="6" alt=""><img id="arrowuptwo" src="images/icon-arrow-up.svg" width="10" height="6" alt="" ></summary>
+  <div class="big_container_detailbox company">
+  <p class="tab choice">History</p>
+  <p class="tab choice">Our Team</p>
+  <p class="tab choice">Blog</p>
+  </div>
+</details>
+<p class="choice">Careers</p>
+<p class="choice">About</p>
+  <p class="log">Login</p>
+  <p class="reg">Register</p>
+</section>
+<div class="greyed"></div>
+<img class='logo' src="images/logo.svg" width="84" height="27" alt="">
+<img class="menu" src="images/icon-menu.svg" width="32" height="18" alt="" onclick="on()">
+<img class="hero-mobile" src="images/image-hero-mobile.png" width="750" height="564" alt="">
+<section class="big-container">
+<img class="hero_desktop" src="images/image-hero-desktop.png" width="960" height="1280" alt="">
+<section class=" text_content">
+  <h1>Make remote work</h1>
+ <p class="para">Get your team in sync, no matter your location. Streamline processes, 
+  create team rituals, and watch productivity soar.</p>
+  <p class="learn">Learn more</p>
+  <section class="flexicon">
+  <img class="databiz icon" src="images/client-databiz.svg" alt="" width="114" height="20">
+  <img class="audio icon" src="images/client-audiophile.svg" alt="" width="73" height="36">
+  <img class="meet icon" src="images/client-meet.svg" alt="" width="90" height="20">
+  <img class="maker icon" src="images/client-maker.svg" alt="" width="83" height="24">
+</section>
+</section>
+</section>
+</section>
+</main>
+
+  <footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Chyunjet</a>.
+  </footer>
+  </div>
+</body>
+</html>
